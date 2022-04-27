@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 import "./styles.scss";
+import Loader from "./components/Loader";
 
 function App() {
   const [searchState, setSearchState] = useState("");
@@ -42,13 +43,15 @@ function App() {
           onChange={(e) => setSearchState(e.target.value)}
         />
 
-        {errorState && <div className="helper red">{errorState}</div>}
-
         <button className="btn">Search</button>
+
+        {errorState && <div className="helper red">{errorState}</div>}
       </form>
 
       {isLoading ? (
-        <div className="text-center">Loading...</div>
+        <div className="text-center">
+          <Loader />
+        </div>
       ) : (
         <>
           <div className="container-fluid px-0 mt-5">
