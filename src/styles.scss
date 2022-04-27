@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: rgb(35, 35, 35);
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Tapestry", cursive;
+  text-align: center;
+  color: #1c7635;
+  font-size: 40px;
+}
+
+.main {
+  padding: 0 1rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 5rem;
+  }
+
+  input {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+    max-width: 400px;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem auto;
+    font-size: 16px;
+    transition: 0.4s ease;
+
+    color: #1c7635;
+
+    &:focus {
+      border-color: #1c7635;
+    }
+  }
+
+  .helper {
+    margin: 0.5rem 0;
+    color: red;
+    text-align: center;
+  }
+
+  .btn {
+    background-color: transparent;
+    border: none;
+    background: #2c974b;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    margin: 1rem auto;
+    transition: 0.4s ease;
+    padding: 1rem;
+    width: 124px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+
+    &:hover {
+      background: #1c7635;
+    }
+  }
+
+  .repo-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    height: 100%;
+    display: block;
+    transition: 0.4s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .title {
+      font-weight: bold;
+      color: #1c7635;
+    }
+
+    .sm {
+      font-size: 14px;
+      margin-top: 4px;
+      color: rgb(82, 82, 82);
+    }
+  }
+}
+
+input {
+  outline: none;
+}
