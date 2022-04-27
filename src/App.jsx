@@ -54,7 +54,6 @@ function App() {
           <div className="container-fluid px-0 mt-5">
             <div className="row gy-4">
               {reposState.map((el) => {
-                console.log(el);
                 const {
                   name,
                   clone_url,
